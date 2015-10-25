@@ -1,7 +1,7 @@
 import os, ctypes
 from ctypes import *
 
-_API_DIR = '/home/pi/HROS1-Framework/Linux/project/api_wrapper2/api_wrapper2'
+_API_DIR = '../Human_Robots_Interaction_Fall15'
 os.chdir(_API_DIR)
 
 _apiwrapper = CDLL(os.path.join(_API_DIR, 'apiwrapper.so'))
