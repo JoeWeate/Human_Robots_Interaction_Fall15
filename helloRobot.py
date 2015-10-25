@@ -10,7 +10,7 @@ import struct
 def Main():
 	#api.ServoShutdown()
 	try:
-		if api.Initialize():
+	if api.Initialize():
 			print("Initalized")
 		else:
 			print("Intialization failed")
