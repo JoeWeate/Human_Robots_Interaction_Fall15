@@ -8,10 +8,12 @@ import struct
 
 
 def Main():
+	global command
 	#api.ServoShutdown()
 	try:
 		if api.Initialize():
 			print("Initalized")
+			command = 1
 		else:
 			print("Intialization failed")
 		#api.ServoShutdown()
@@ -28,19 +30,22 @@ def Main():
 		sys.exit()
 
 def Run():
-  	command=1
 	#api.Walk(True)
 	#print("Running...")
 	#move foward
 	if(command == 1):
 	  api.PlayAction(15)
 	  print('Sit')
+	  command = 0
 		#api.WalkMove(0)
 		#api.Walk(True)
 		#api.WalkMove(20)
 	#move back
-	elif(command == 7):
-		print("supposed to move backwards")
+	elif(command == 0):
+		api.PlayAction(8)
+		print('Stand up')
+		command = 1
+		#print("supposed to move backwards")
 	#move right
 	elif(command == 8):
 		api.WalkMove(0)
