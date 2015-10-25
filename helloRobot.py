@@ -28,7 +28,7 @@ def Main():
 		sys.exit()
 
 def Run():
-  command=1
+  	command=1
 	#api.Walk(True)
 	#print("Running...")
 	#move foward
