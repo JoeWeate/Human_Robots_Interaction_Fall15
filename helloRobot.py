@@ -16,6 +16,7 @@ def Main():
 			print("Intialization failed")
 		#api.ServoShutdown()
 		api.PlayAction(8)
+		print('Stand up')
 		#value = int(input("Turn head to"))
 		#api.SetMotorValue(20, value)
 		Run()
@@ -33,6 +34,7 @@ def Run():
 	#move foward
 	if(command == 1):
 	  api.PlayAction(15)
+	  print('Sit')
 		#api.WalkMove(0)
 		#api.Walk(True)
 		#api.WalkMove(20)
