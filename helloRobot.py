@@ -17,7 +17,7 @@ def Main():
                         print("Intialization failed")
                 
                 api.PlayAction(55)
-                print('Stand up')
+                print('Crawl')
                 Run(command)
         except (KeyboardInterrupt):
                 api.ServoShutdown()
@@ -30,12 +30,12 @@ def Run(command):
 
         if(command == 1):
           api.PlayAction(52)
-          print('Sit')
+          print('Plank')
           command = 0
         
         elif(command == 0):
                 api.PlayAction(55)
-                print('Stand up')
+                print('Crawl')
                 command = 1
         
         
