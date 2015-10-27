@@ -36,14 +36,16 @@ def Run(command):
         elif(command == 0):
                 api.PlayAction(55)
                 print('Crawl')
-                command = 1
-                
-        elif(command==2):
                 cry= random.randint(1,5)
                 if(cry==3):
-                        command = 3
-                else
+                        command = 2
+                        print('Cry')
+                else:
                         command=1
+                        print('KeepCrawling')
+                
+        elif(command==2):
+                
         
         
 
