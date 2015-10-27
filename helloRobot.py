@@ -37,6 +37,13 @@ def Run(command):
                 api.PlayAction(55)
                 print('Crawl')
                 command = 1
+                
+        elif(command==2):
+                cry= random.randint(1,5)
+                if(cry==3):
+                        command = 3
+                else
+                        command=1
         
         
 
