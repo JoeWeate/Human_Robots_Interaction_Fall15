@@ -5,6 +5,7 @@ import os
 import time
 import sys
 import struct
+import random
 
 def Main():
         command = 1
