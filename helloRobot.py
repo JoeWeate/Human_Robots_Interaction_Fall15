@@ -41,7 +41,7 @@ def Run(command):
                         command = 2
                         print('Cry')
                 else:
-                        command=1
+                        command=0
                         print('KeepCrawling')
                 
         elif(command==2):
