@@ -48,6 +48,8 @@ def Run(command):
                 print('Crying')
         
         
+        Run(command)
+        
 
 if __name__ == "__main__": 
   Main()
