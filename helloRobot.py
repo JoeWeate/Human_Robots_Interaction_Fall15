@@ -28,28 +28,28 @@ def Main():
                 sys.exit()
 
 def Run(command):
-
-        if(command == 1):
-          api.PlayAction(52)
-          print('Plank')
-          command = 0
+        while(True):
+                if(command == 1):
+                        api.PlayAction(52)
+                        print('Plank')
+                        command = 0
         
-        elif(command == 0):
-                api.PlayAction(55)
-                print('Crawl')
-                cry= random.randint(1,5)
-                if(cry==3):
-                        command = 2
-                        print('Cry')
-                else:
-                        command=0
-                        print('KeepCrawling')
+                elif(command == 0):
+                        api.PlayAction(55)
+                        print('Crawl')
+                        cry= random.randint(1,5)
+                        if(cry==3):
+                                command = 2
+                                print('Cry')
+                        else:
+                                command=0
+                                print('KeepCrawling')
                 
-        elif(command==2):
-                print('Crying')
+                elif(command==2):
+                        print('Crying')
         
         
-        Run(command)
+        
         
 
 if __name__ == "__main__": 
