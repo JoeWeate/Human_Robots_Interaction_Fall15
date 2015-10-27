@@ -37,7 +37,8 @@ def Run(command):
                 elif(command == 0):
                         api.PlayAction(55)
                         print('Crawl')
-                        cry= random.randint(1,5)
+                        cry= random.randint(1,4)
+                        print(cry)
                         if(cry==3):
                                 command = 2
                                 print('Cry')
