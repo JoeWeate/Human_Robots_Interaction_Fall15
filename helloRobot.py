@@ -54,13 +54,13 @@ def Run(command):
                 	print('crying: ' + FB)
                 	buzzer=Buzzer()
                         buzzer.play(1)
-              		if( FB > 650 OR FB < 600):
+              		if( FB > 650 or FB < 600):
           			command = 3
           			
           	elif(command==3):
           		api.PlayAction(52)
           		FB = api.passAccelData(2)
-          		while(FB > 650 OR FB < 600):
+          		while(FB > 650 or FB < 600):
           			FB = api.passAccelData(2)
           			print(FB)
           		
