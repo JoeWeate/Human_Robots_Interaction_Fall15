@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import RPi.GPIO as GPIO   #import the GPIO library
 import time               #import the time library
 

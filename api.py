@@ -6,6 +6,9 @@ os.chdir(_API_DIR)
 
 _apiwrapper = CDLL(os.path.join(_API_DIR, 'apiwrapper.so'))
 
+passAccelData = _apiwrapper.passAccelDataJS
+passAccelData.argtype =[c_int]
+passAccelData.restype = c_int
 Initialize = _apiwrapper.InitializeJS #Initializes the robot. Without this function nothing will work.
 Initialize.argtypes = []              # Make sure it returns true, otherwise it won't work
 Initialize.restype = c_bool

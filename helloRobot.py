@@ -36,9 +36,11 @@ def Run(command):
                         buzzer.play(4)
                         print('Plank')
                         command = 0
-        
+			print('Right Left',api.passAccelData(2))
+			print('Forward backword',api.passAccelData(1))
                 elif(command == 0):
-                        api.PlayAction(55)
+                        print(api.passAccelData(2))
+			api.PlayAction(55)
                         print('Crawl')
                         cry= random.randint(1,4)
                         print(cry)
