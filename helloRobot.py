@@ -6,7 +6,7 @@ import time
 import sys
 import struct
 import random
-from Human_Robots_Interaction_Fall15 import buzzer.py
+import buzzer
 
 
 def Main():
