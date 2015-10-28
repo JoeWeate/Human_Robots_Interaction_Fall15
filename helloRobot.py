@@ -75,9 +75,12 @@ def Run(command):
           		command=1
           		
           	elif(command ==4):
-          		buzzer=Buzzer()
-          		buzzer.play(1)
-          		print('Sorry...')
+          	
+          		for i in range(0,10):
+          			buzzer=Buzzer()
+          			buzzer.play(1)
+          			print('Sorry...')
+          		command = 3
           		
                         
                         
