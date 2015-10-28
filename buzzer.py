@@ -108,6 +108,6 @@ class Buzzer(object):
   GPIO.setup(self.buzzer_pin, GPIO.IN)
 
 if __name__ == "__main__":
-  a = input("Enter Tune number 1-5:")
-  buzzer = Buzzer()
-  buzzer.play(int(a))
+  # a = input("Enter Tune number 1-5:")
+  # buzzer = Buzzer()
+  # buzzer.play(int(a))
