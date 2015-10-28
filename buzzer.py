@@ -63,14 +63,19 @@ class Buzzer(object):
    time.sleep(1);
     
     
-    
   elif(tune==3):
-    pitches=[392,294,0,392,294,0,392,0,392,392,392,0,1047,262]
-    duration=[0.2,0.2,0.2,0.2,0.2,0.2,0.1,0.1,0.1,0.1,0.1,0.1,0.8,0.4]
-    for p in pitches:
-      self.buzz(p, duration[x])  #feed the pitch and duration to the func$
-      time.sleep(duration[x] *0.5)
-      x+=1
+   self.buzz(2093,0.01);
+   time.sleep(0.0);
+   self.buzz(2349,0.02);
+   time.sleep(0.03);
+   self.buzz(2093,0.02);
+   time.sleep(0.03);
+   self.buzz(2349,0.02);
+   time.sleep(0.03);
+   self.buzz(2093,0.02);
+   time.sleep(0.03);
+   self.buzz(0,0);
+   time.sleep(1);
 
   elif(tune==4):
     pitches=[1047, 988,659]
