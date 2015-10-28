@@ -37,7 +37,7 @@ class Buzzer(object):
   if(tune==1):
   
    i=0
-   for (i=0;i<5;i++)
+   for i in range (0,4)
    {
     self.buzz(1046,0.1);
     time.sleep(0.0);
@@ -71,7 +71,7 @@ class Buzzer(object):
   elif(tune==3):
    
    j=0
-   for (j=0;j<6;j++)
+   for j in range (0,4)
    {
     self.buzz(2093,0.01);
     time.sleep(0.0);
