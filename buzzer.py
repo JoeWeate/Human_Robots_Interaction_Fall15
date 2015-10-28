@@ -90,7 +90,7 @@ class Buzzer(object):
   elif(tune==4):
    self.buzz(261,0.1);
    time.sleep(0.0);
-   self.buzz(349,0.1;
+   self.buzz(349,0.1);
    time.sleep(0.0);
    self.buzz(392,0.1);
    time.sleep(0.0)
