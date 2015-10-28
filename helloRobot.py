@@ -6,6 +6,8 @@ import time
 import sys
 import struct
 import random
+from Human_Robots_Interaction_Fall15 import buzzer.py
+
 
 def Main():
         command = 1
