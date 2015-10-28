@@ -35,18 +35,23 @@ class Buzzer(object):
 
   print("Playing tune ",tune)
   if(tune==1):
-   self.buzz(1046,0.1);
-   time.sleep(0.0);
-   self.buzz(987,0.1);
-   time.sleep(0.0);
-   self.buzz(932,0.1);
-   time.sleep(0.0);
-   self.buzz(880,0.1);
-   time.sleep(0.0);
-   self.buzz(830,0.1);
-   time.sleep(0.0);
-   self.buzz(0,0.5);
-   time.sleep(1);
+   
+   int i;
+   for (i=0;i<5;i++)
+   {
+    self.buzz(1046,0.1);
+    time.sleep(0.0);
+    self.buzz(987,0.1);
+    time.sleep(0.0);
+    self.buzz(932,0.1);
+    time.sleep(0.0);
+    self.buzz(880,0.1);
+    time.sleep(0.0);
+    self.buzz(830,0.1);
+    time.sleep(0.0);
+    self.buzz(0,0.5);
+    time.sleep(0.5);
+   }
    
   elif(tune==2):
    self.buzz(1567,0.05);
@@ -64,19 +69,24 @@ class Buzzer(object):
     
     
   elif(tune==3):
-   self.buzz(2093,0.01);
-   time.sleep(0.0);
-   self.buzz(2349,0.02);
-   time.sleep(0.03);
-   self.buzz(2093,0.02);
-   time.sleep(0.03);
-   self.buzz(2349,0.02);
-   time.sleep(0.03);
-   self.buzz(2093,0.02);
-   time.sleep(0.03);
-   self.buzz(0,0);
-   time.sleep(1);
-
+   
+   int j;
+   for (j=0;j<6;j++)
+   {
+    self.buzz(2093,0.01);
+    time.sleep(0.0);
+    self.buzz(2349,0.02);
+    time.sleep(0.03);
+    self.buzz(2093,0.02);
+    time.sleep(0.03);
+    self.buzz(2349,0.02);
+    time.sleep(0.03);
+    self.buzz(2093,0.02);
+    time.sleep(0.03);
+    self.buzz(0,0);
+    time.sleep(1);
+   }
+   
   elif(tune==4):
    self.buzz(261,0.1);
    time.sleep(0.0);
