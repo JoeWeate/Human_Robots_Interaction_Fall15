@@ -36,7 +36,7 @@ class Buzzer(object):
   print("Playing tune ",tune)
   if(tune==1):
   
-  i=0
+   i=0
    for (i=0;i<5;i++)
    {
     self.buzz(1046,0.1);
