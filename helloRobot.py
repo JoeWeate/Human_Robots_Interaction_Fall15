@@ -46,9 +46,7 @@ def Run(command):
                         if(cry==2):
                                 command = 2
                                 print('Cry')
-                        else:
-                                command=0
-                                print('KeepCrawling')
+                        
                 
                 elif(command==2):
                 	FB= api.passAccelData(1)
