@@ -27,6 +27,7 @@ def Main():
                 sys.exit()
 
 def Run(command):
+	thresh = 5
         while(True):
                 if(command == 1):
                         api.PlayAction(52)
@@ -34,13 +35,15 @@ def Run(command):
                         buzzer.play(4)
                         print('Plank')
                         command = 0
+                        thresh=5
                 elif(command == 0):
                 	
 			api.PlayAction(55)
                         print('Crawl')
-                        cry= random.randint(1,3)
+                        cry= random.randint(1,thresh)
+                        thresh-=1
                         print(cry)
-                        if(cry==2):
+                        if(cry==1):
                                 command = 2
                                 print('Cry')
                         FB=api.passAccelData(1)
