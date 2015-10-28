@@ -38,7 +38,7 @@ class Buzzer(object):
   
    i=0
    for i in range (0,4):
-   {
+   
     self.buzz(1046,0.1);
     time.sleep(0.0);
     self.buzz(987,0.1);
@@ -51,7 +51,7 @@ class Buzzer(object):
     time.sleep(0.0);
     self.buzz(0,0.5);
     time.sleep(0.5);
-   }
+   
    
   elif(tune==2):
    self.buzz(1567,0.05);
@@ -72,7 +72,7 @@ class Buzzer(object):
    
    j=0
    for j in range (0,4):
-   {
+   
     self.buzz(2093,0.01);
     time.sleep(0.0);
     self.buzz(2349,0.02);
@@ -85,7 +85,7 @@ class Buzzer(object):
     time.sleep(0.03);
     self.buzz(0,0);
     time.sleep(1);
-   }
+   
    
   elif(tune==4):
    self.buzz(261,0.1);
