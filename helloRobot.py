@@ -11,7 +11,7 @@ import buzzer
 
 def Main():
         command = 1
-        
+        buzzer= Buzzer()
         try:
                 if api.Initialize():
                         print("Initalized")
