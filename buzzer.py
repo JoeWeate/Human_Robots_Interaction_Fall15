@@ -45,7 +45,7 @@ class Buzzer(object):
    time.sleep(0.0);
    self.buzz(830,0.1);
    time.sleep(0.0);
-   self.buzz(0,0.1);
+   self.buzz(0,0.5);
    time.sleep(1);
    
     #pitches=[262,294,330,349,392,440,494,523, 587, 659,698,784,880,988,1047]
