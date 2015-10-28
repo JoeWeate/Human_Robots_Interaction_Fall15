@@ -53,13 +53,13 @@ def Run(command):
                 	print(FB)
                 	buzzer=Buzzer()
                         buzzer.play(1)
-              		if( FB > 520 or FB < 480):
+              		if( FB > 420 or FB < 360):
           			command = 3
           			
           	elif(command==3):
           		api.PlayAction(52)
           		FB = api.passAccelData(1)
-          		while(FB > 520 or FB < 480):
+          		while(FB > 420 or FB < 360):
           			FB = api.passAccelData(1)
           			print(FB)
           		
