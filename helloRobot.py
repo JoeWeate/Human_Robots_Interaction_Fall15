@@ -11,7 +11,6 @@ from buzzer import Buzzer
 
 def Main():
         command = 1
-        buzzer=Buzzer()
         try:
                 if api.Initialize():
                         print("Initalized")
@@ -33,6 +32,7 @@ def Run(command):
         while(True):
                 if(command == 1):
                         api.PlayAction(52)
+                        buzzer=Buzzer()
                         buzzer.play(4)
                         print('Plank')
                         command = 0
@@ -50,6 +50,7 @@ def Run(command):
                                 print('KeepCrawling')
                 
                 elif(command==2):
+                        buzzer=Buzzer()
                         buzzer.play(1)
                         print('Crying')
         
