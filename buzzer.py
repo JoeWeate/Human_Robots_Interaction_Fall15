@@ -4,7 +4,7 @@ import time               #import the time library
 class Buzzer(object):
  def __init__(self):
   GPIO.setmode(GPIO.BCM)  
-  self.buzzer_pin = 5 #set to GPIO pin 5
+  self.buzzer_pin = 22 #set to GPIO pin 22
   GPIO.setup(self.buzzer_pin, GPIO.IN)
   GPIO.setup(self.buzzer_pin, GPIO.OUT)
   print("buzzer ready")
@@ -13,7 +13,7 @@ class Buzzer(object):
   class_name = self.__class__.__name__
   print (class_name, "finished")
 
- def buzz(self,pitch, duration):   #create the function ìbuzzî and feed it the pitch and duration)
+ def buzz(self,pitch, duration):   #create the function ‚Äúbuzz‚Äù and feed it the pitch and duration)
  
   if(pitch==0):
    time.sleep(duration)
@@ -22,7 +22,7 @@ class Buzzer(object):
   delay = period / 2     #calcuate the time for half of the wave  
   cycles = int(duration * pitch)   #the number of waves to produce is the duration times the frequency
 
-  for i in range(cycles):    #start a loop from 0 to the variable ìcyclesî calculated above
+  for i in range(cycles):    #start a loop from 0 to the variable ‚Äúcycles‚Äù calculated above
    GPIO.output(self.buzzer_pin, True)   #set pin 18 to high
    time.sleep(delay)    #wait with pin 18 high
    GPIO.output(self.buzzer_pin, False)    #set pin 18 to low
@@ -35,20 +35,33 @@ class Buzzer(object):
 
   print("Playing tune ",tune)
   if(tune==1):
-    pitches=[262,294,330,349,392,440,494,523, 587, 659,698,784,880,988,1047]
-    duration=0.1
-    for p in pitches:
-      self.buzz(p, duration)  #feed the pitch and duration to the function, ìbuzzî
-      time.sleep(duration *0.5)
-    for p in reversed(pitches):
-      self.buzz(p, duration)
-      time.sleep(duration *0.5)
+   self.buzz(1046,0.1);
+   time.sleep(0.1);
+   self.buzz(987,0.1);
+   time.sleep(0.1);
+   self.buzz(932,0.1);
+   time.sleep(0.1);
+   self.buzz(880,0.1);
+   time.sleep(0.1);
+   self.buzz(830,0.1);
+   time.sleep(0.1);
+   self.buzz(0,0.1);
+   time.sleep(1);
+   
+    #pitches=[262,294,330,349,392,440,494,523, 587, 659,698,784,880,988,1047]
+    #duration=0.1
+    #for p in pitches:
+     # self.buzz(p, duration)  #feed the pitch and duration to the function, ‚Äúbuzz‚Äù
+     # time.sleep(duration *0.5)
+    #for p in reversed(pitches):
+     # self.buzz(p, duration)
+     # time.sleep(duration *0.5)
 
   elif(tune==2):
     pitches=[262,330,392,523,1047]
     duration=[0.2,0.2,0.2,0.2,0.2,0,5]
     for p in pitches:
-      self.buzz(p, duration[x])  #feed the pitch and duration to the function, ìbuzzî
+      self.buzz(p, duration[x])  #feed the pitch and duration to the function, ‚Äúbuzz‚Äù
       time.sleep(duration[x] *0.5)
       x+=1
   elif(tune==3):
