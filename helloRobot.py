@@ -49,7 +49,7 @@ def Run(command):
                                 print('KeepCrawling')
                 
                 elif(command==2):
-                        play(1)
+                        buzzer.play(1)
                         print('Crying')
         
         
