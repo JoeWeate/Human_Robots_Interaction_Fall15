@@ -35,7 +35,7 @@ def Run(command):
                         print('Plank')
                         command = 0
                 elif(command == 0):
-                        print(api.passAccelData(2))
+                        print(api.passAccelData(1))
 			api.PlayAction(55)
                         print('Crawl')
                         cry= random.randint(1,3)
@@ -48,7 +48,7 @@ def Run(command):
                                 print('KeepCrawling')
                 
                 elif(command==2):
-                	FB= api.passAccelData(2)
+                	FB= api.passAccelData(1)
                 	print('crying: ')
                 	print(FB)
                 	buzzer=Buzzer()
@@ -58,9 +58,9 @@ def Run(command):
           			
           	elif(command==3):
           		api.PlayAction(52)
-          		FB = api.passAccelData(2)
+          		FB = api.passAccelData(1)
           		while(FB > 520 or FB < 480):
-          			FB = api.passAccelData(2)
+          			FB = api.passAccelData(1)
           			print(FB)
           		
           		command=1
