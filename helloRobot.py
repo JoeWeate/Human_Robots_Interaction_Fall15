@@ -17,9 +17,7 @@ def Main():
                         command = 1
                 else:
                         print("Intialization failed")
-                
-                api.PlayAction(55)
-                print('Crawl')
+
                 Run(command)
         except (KeyboardInterrupt):
                 api.ServoShutdown()
@@ -51,16 +49,17 @@ def Run(command):
                 
                 elif(command==2):
                 	FB= api.passAccelData(2)
-                	print('crying: ' + FB)
+                	print('crying: ')
+                	print(FB)
                 	buzzer=Buzzer()
                         buzzer.play(1)
-              		if( FB > 650 or FB < 600):
+              		if( FB > 520 or FB < 480):
           			command = 3
           			
           	elif(command==3):
           		api.PlayAction(52)
           		FB = api.passAccelData(2)
-          		while(FB > 650 or FB < 600):
+          		while(FB > 520 or FB < 480):
           			FB = api.passAccelData(2)
           			print(FB)
           		
