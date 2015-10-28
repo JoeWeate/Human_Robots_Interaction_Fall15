@@ -35,10 +35,7 @@ def Run(command):
                         print('Plank')
                         command = 0
                 elif(command == 0):
-                	FB=api.passAccelData(1)
-                        print(FB)
-                        if( FB > 440 or FB < 350):
-          			command = 4
+                	
 			api.PlayAction(55)
                         print('Crawl')
                         cry= random.randint(1,3)
@@ -46,6 +43,10 @@ def Run(command):
                         if(cry==2):
                                 command = 2
                                 print('Cry')
+                        FB=api.passAccelData(1)
+                        print(FB)
+                        if( FB > 440 or FB < 350):
+          			command = 4
                         
                 
                 elif(command==2):
