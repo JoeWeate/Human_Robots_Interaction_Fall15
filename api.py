@@ -1,7 +1,7 @@
 import os, ctypes
 from ctypes import *
 
-_API_DIR = '../Human_Robots_Interaction_Fall15'
+_API_DIR = '../Marley'
 os.chdir(_API_DIR)
 
 _apiwrapper = CDLL(os.path.join(_API_DIR, 'apiwrapper.so'))
