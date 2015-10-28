@@ -50,7 +50,7 @@ class Buzzer(object):
     self.buzz(830,0.1);
     time.sleep(0.0);
     self.buzz(0,0.5);
-    time.sleep(0.5);
+    time.sleep(0.2);
    
    
   elif(tune==2):
@@ -76,13 +76,13 @@ class Buzzer(object):
     self.buzz(2093,0.01);
     time.sleep(0.0);
     self.buzz(2349,0.02);
-    time.sleep(0.03);
+    time.sleep(0.05);
     self.buzz(2093,0.02);
-    time.sleep(0.03);
+    time.sleep(0.05);
     self.buzz(2349,0.02);
-    time.sleep(0.03);
+    time.sleep(0.05);
     self.buzz(2093,0.02);
-    time.sleep(0.03);
+    time.sleep(0.05);
     self.buzz(0,0);
     time.sleep(1);
    
