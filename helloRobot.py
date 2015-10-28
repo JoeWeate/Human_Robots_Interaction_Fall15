@@ -6,7 +6,6 @@ import time
 import sys
 import struct
 import random
-import buzzer
 
 
 def Main():
@@ -49,7 +48,6 @@ def Run(command):
                                 print('KeepCrawling')
                 
                 elif(command==2):
-                        buzzer.play(1)
                         print('Crying')
         
         
