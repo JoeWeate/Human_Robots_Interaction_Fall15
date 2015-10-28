@@ -6,11 +6,12 @@ import time
 import sys
 import struct
 import random
-import buzzer
+from buzzer import Buzzer
 
 
 def Main():
         command = 1
+        buzzer=Buzzer()
         try:
                 if api.Initialize():
                         print("Initalized")
