@@ -36,15 +36,15 @@ class Buzzer(object):
   print("Playing tune ",tune)
   if(tune==1):
    self.buzz(1046,0.1);
-   time.sleep(0.1);
+   time.sleep(0.01);
    self.buzz(987,0.1);
-   time.sleep(0.1);
+   time.sleep(0.01);
    self.buzz(932,0.1);
-   time.sleep(0.1);
+   time.sleep(0.01);
    self.buzz(880,0.1);
-   time.sleep(0.1);
+   time.sleep(0.01);
    self.buzz(830,0.1);
-   time.sleep(0.1);
+   time.sleep(0.01);
    self.buzz(0,0.1);
    time.sleep(1);
    
